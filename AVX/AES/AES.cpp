@@ -40,7 +40,7 @@ int main(){
 
     block[0] = _mm_load_si128((__m128i*) pt);
     
-    AES_Encrypt(block[0], block, roundKeys,10);
+    AES_encrypt(block[0], block, roundKeys,10);
 
     _mm_store_si128 ((__m128i*)ct,block[0]);
 
